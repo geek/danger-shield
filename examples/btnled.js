@@ -4,9 +4,7 @@ var Five = require('johnny-five');
 var Danger = require('../');
 
 
-var board = new Five.Board();
-
-board.once('ready', function () {
+Five.Board().once('ready', function () {
 
     var danger = new Danger(Five);
 
